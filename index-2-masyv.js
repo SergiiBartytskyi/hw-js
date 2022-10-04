@@ -332,6 +332,10 @@
 // }
 // console.log(`${smallestNumber}: `, smallestNumber);
 
+// 2-варіант
+
+// console.log(Math.min(...numbers));
+
 // Пошук найбільшого числа
 
 // const numbers = [51, 18, 13, 24, 7, 85, 19];
@@ -369,3 +373,91 @@
 // const string = friends.join(", ");
 // console.log(friends);
 // console.log(string);
+
+// // 5. Видалити задубльовані елементи
+// -------------------------------------------------------------------------------------------
+
+// const names = ["Mango", "Poly", "Mango", "Kiwi", "Ajax", "Kiwi"];
+// const res = [];
+
+// for (let i = 0; i < names.length; i += 1) {
+// 	console.table(names);
+// 	if (res.includes(names[i])) continue;
+// 	res.push(names[i]);
+// }
+// console.table(res);
+
+// 6. Сортування масиву з циклом
+// Написати скрипт сортування масиву рядків
+// -----------------------------------------------------------------------------------------------
+
+// const numbers = [1, 8, 4, 2, 9, 7, 5];
+// for (let loop = 0; loop < numbers.length; loop += 1) {
+// 	for (let i = 1; i < numbers.length - loop; i += 1) {
+// 		const firstValue = numbers[i - 1];
+// 		const secondValue = numbers[i];
+
+// 		if (firstValue > secondValue) {
+// 			numbers[i - 1] = secondValue;
+// 			numbers[i] = firstValue;
+// 		}
+// 	}
+// }
+// console.table(numbers);
+
+// сортування по першій букві елемента
+// ----------------------------------------------------------------------------------------------------
+
+// const langs = ["python", "javascript", "c==", "haskel", "php", "ruby"];
+// for (let loop = 0; loop < langs.length; loop += 1) {
+// 	console.log("LOOP: ", loop);
+
+// 	for (let i = 1; i < langs.length - loop; i += 1) {
+// 		console.log("i: ", i);
+// 		const firstValue = langs[i - 1];
+// 		const secondValue = langs[i];
+
+// 		if (firstValue > secondValue) {
+// 			langs[i - 1] = secondValue;
+// 			langs[i] = firstValue;
+// 		}
+// 	}
+// }
+// console.table(langs);
+//  ===================================================================================================
+
+// const name = "Mango";
+// console.log(name.split("")); // ["M", "a", "n", "g", "o"]
+
+// const message = "JavaScript - це цікаво";
+// console.log(message.split(" ")); // ["JavaScript", "-", "це", "цікаво"]
+
+// // 1. Оголошення параметрів x, y, z
+// function multiply(x, y, z) {
+// 	console.log(`Результат множення дорівнює ${x * y * z}`);
+// }
+
+// // 2. Передача аргументів
+// multiply(2, 3, 5); // Результат множення дорівнює 30
+// multiply(4, 8, 12); // Результат множення дорівнює 384
+// multiply(17, 6, 25); // Результат множення дорівнює 2550
+
+// Поверенння значення
+
+// function multiply(x, y, z) {
+// 	console.log("Код до return виконується звичайним чином");
+// 	// Повертаємо результат виразу множення
+// 	return x + y + z;
+
+// 	console.log("Цей лог ніколи не виконається, він стоїть після return");
+// }
+
+// // Результат роботи функції можна зберегти у змінну
+// let result = multiply(2, 3, 5);
+// console.log(result); // 30
+
+// result = multiply(4, 8, 12);
+// console.log(result); // 384
+
+// result = multiply(17, 6, 25);
+// console.log(result); // 2550
