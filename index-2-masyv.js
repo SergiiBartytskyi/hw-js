@@ -368,13 +368,47 @@
 // string = string.slice(0, string.length - 1);
 // console.log(string);
 
-// 2) join
+// 2) join (зшиває масив)
 // const friends = ["Mango", "Poly", "Kiwi", "Ajax"];
 // const string = friends.join(", ");
 // console.log(friends);
 // console.log(string);
 
-// // 5. Видалити задубльовані елементи
+// =====================================================================================
+// 6. Написати скрипт, який замінить регістр кожного символу в рядку на протилежний
+// Наприклад, "JavaScript" на виході має бути "jAVAsCRIPT".
+
+// const string = "JavaScript";
+// const letters = string.split("");
+// let invertedString = "";
+
+// console.log(letters);
+
+// for (const letter of letters) {
+// 	console.log(letter);
+
+//  1) олдскул
+
+// if (letter === letter.toLowerCase()) {
+// 	console.log("Ця буква в нижньому регістрі!!! - ", letter);
+// 	invertedString += letter.toUpperCase();
+// } else {
+// 	console.log("Ця буква у верхньому регістрі!!! - ", letter);
+// 	invertedString += letter.toLowerCase();
+// }
+//  2) тернарний
+
+// операція присвоєння
+// 	invertedString +=
+// 		// операція зрівняння
+// 		letter === letter.toLowerCase()
+// 			? // кейси (що куди писати)
+// 			  letter.toUpperCase()
+// 			: letter.toLowerCase();
+// }
+// console.log(invertedString);
+
+// // 6. Видалити задубльовані елементи
 // -------------------------------------------------------------------------------------------
 
 // const names = ["Mango", "Poly", "Mango", "Kiwi", "Ajax", "Kiwi"];
@@ -387,7 +421,7 @@
 // }
 // console.table(res);
 
-// 6. Сортування масиву з циклом
+// 7. Сортування масиву з циклом
 // Написати скрипт сортування масиву рядків
 // -----------------------------------------------------------------------------------------------
 
@@ -461,3 +495,57 @@
 
 // result = multiply(17, 6, 25);
 // console.log(result); // 2550
+// -------------------------------------------------------------------------------------------------
+// Чому у прикладі на картинці починається все з foo(), а не function bar()?
+// function bar() {
+// 	console.log("bar");
+// }
+
+// function baz() {
+// 	console.log("baz");
+// }
+
+// function foo() {
+// 	console.log("foo");
+// 	baz();
+// 	bar();
+// }
+
+// foo();
+// -----------------------------------------------------------------------------------------------------
+// замикання функції
+
+// function counter() {
+// 	let count = 0;
+
+// 	return function () {
+// 		count += 1;
+// 		return count;
+// 	};
+// }
+
+// const pageCounter = counter();
+
+// console.log(pageCounter);
+// console.log(pageCounter);
+
+// console.log(pageCounter);
+
+// ==========================================================================================
+
+// факторіал числа
+// const x = 7;
+// let result = 1;
+// for (let i = 1; i <= x; i += 1) {
+// 	result *= i;
+// }
+// console.log(result);
+
+// function factorial(x) {
+// 	if (x === 1) return 1;
+
+// 	return x * factorial(x - 1);
+// }
+// const value = factorial(5);
+
+// console.log(value);
