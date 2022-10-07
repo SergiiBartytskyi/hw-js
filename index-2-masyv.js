@@ -407,6 +407,80 @@
 // 			: letter.toLowerCase();
 // }
 // console.log(invertedString);
+// ==========================================================================
+// 7. Робимо slack в url із назви статті (наприклад на dev.to),
+// Заголовок статті складається тільки із букв і пробілів
+// -----------------------------------------------------------------------------
+// - нормалізуємо статтю
+// - розбиваємо по словам
+// - зшиваємо в рядок із розділювачами
+
+// - Повинно вийти top-10-benefits-of-react-framework
+
+// const title = "Top 10 benefits of React framework";
+
+// 1) мій
+
+// const words = title.split(" ");
+// console.log(words);
+// const string = words.join("-").toLowerCase();
+// console.log(string);
+
+// 2) олдскул
+
+// const normalizedTitle = title.toLowerCase();
+// console.log(normalizedTitle);
+
+// const words = normalizedTitle.split(" ");
+// console.log(words);
+
+// const slug = words.join("-");
+// console.log(slug);
+
+// 3) в один рядок
+
+// const slug = title.toLowerCase().split(" ").join("-");
+// console.log(slug);
+
+// 8. Напиши скрипт, який рахує суму елементів двох масивів
+// -------------------------------------------------------------------------------------------
+
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
+
+// let total = 0;
+
+// const numbers = array1.concat(array2);
+
+// for (const number of numbers) {
+// 	total += number;
+// }
+// console.log(total);
+// ===========================================================================================
+// 9. Працюємо з колекцією карточок в Trello
+// - метод splice();
+// - видалити;
+// - добавити;
+// - обновити;
+// -----------------------------------------------------------------------------------------
+// const cards = [
+// 	"Карточка-1",
+// 	"Карточка-2",
+// 	"Карточка-3",
+// 	"Карточка-4",
+// 	"Карточка-5",
+// ];
+// 1)- видалити:
+// cards.splice(2, 1);
+// console.table(cards);
+
+// 2) - добавити:
+// cards.splice(2, 0, 1);
+// console.table(cards);
+
+// 3) - обновити:
+// cards.splice(3, 1, "JS");
+// console.table(cards);
 
 // // 6. Видалити задубльовані елементи
 // -------------------------------------------------------------------------------------------
