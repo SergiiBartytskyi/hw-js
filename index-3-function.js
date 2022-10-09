@@ -50,9 +50,9 @@
 // - Якщо знайшли логін, вивести повідомлення 'Користувач [логін] знайдений.'
 // --------------------------------------------------------------------------------------------
 
-const logins = ["sdfsdff", "iuoiretjksdf", "sdfsdfnn", "lpfgdkjhij"];
+// const logins = ["sdfsdff", "iuoiretjksdf", "sdfsdfnn", "lpfgdkjhij"];
 
-const logins2 = ["ghfgdh", "liuoitjsrty", "eqgdfbhki", "vkligdndgndgnh"];
+// const logins2 = ["ghfgdh", "liuoitjsrty", "eqgdfbhki", "vkligdndgndgnh"];
 // 1. без функції (щоразу потрібно вводити)
 
 // const loginToFind = "lpfgdkjhij";
@@ -272,9 +272,704 @@ const logins2 = ["ghfgdh", "liuoitjsrty", "eqgdfbhki", "vkligdndgndgnh"];
 // ==============================================================================================
 
 // hw
- 7. Напиши ф - ю filterNumbers(array[, number1, ...]), яка
+//  7. Напиши ф - ю filterNumbers(array[, number1, ...]), яка
 // - першим аргументом приймає масив слів
 // - після першого аргумента може бути довільне слово інших аргументів які будуть словами
 // - функція повинна повернути новий масив, в якому будуть тільки ті аргументи починаючи з другого,
 // для яких є аналог в оригінальному масиві
 // ----------------------------------------------------------------------------------------
+// const filterStrings = function (array, ...args) {
+// 	// console.log("array: ", array);
+// 	// console.log("args: ", args);
+// 	const uniqeElements = [];
+
+// 	for (const element of array) {
+// 		if (args.includes(element)) {
+// 			uniqeElements.push(element);
+
+// 			console.log(`${element} є всюди!`);
+// 		}
+// 	}
+
+// 	return uniqeElements;
+// };
+
+// console.log(filterStrings(['Один', 'два', 'три', 'чотири'], 'пять', 'шість', 'два', 'сім', 'вісім'));
+
+// const defElements = function (array, ...args) {
+//     	console.log("array: ", array);
+// 	console.log("args: ", args);
+//     const uniqeElements = [];
+
+//     for (const element of array) {
+//         if (args.includes(element)) {
+//             uniqeElements.push(element);
+
+//             console.log(`${element} є всюди`);
+//         }
+//     }
+//     return uniqeElements;
+// }
+// console.log(defElements([1, 2, 3, 4, 5], 10, 15, 2, 3, 8));
+
+// ==================================================================
+
+// Патерн (раннє повернення (з return))
+// -------------------------------------------------------------------
+
+// const checkAge = function (age) {
+   
+
+//   if (age >= 18) {
+//    return  "Ви повнолітня людина";
+//   }
+
+//     return "Ви неповнолітня людина";
+// }
+  
+// console.log(checkAge(20));
+// // ========================================================================
+// Напиши функцію getExtremeElements(array), яка приймає один параметр array
+//     - масив елементів довільної довжини.Функція повинна повертати масив
+//      з двох елементів - першого і останнього елемента параметра array.
+
+// function getExtremeElements(array) {
+  
+//     let ExtremeElements = [array[0], array[array.length - 1]];
+//     console.log(ExtremeElements);
+
+//     return ExtremeElements;
+// }
+
+// getExtremeElements([1, 2, 3, 4, 5]);
+// повертає[1, 5]
+// getExtremeElements(["Earth", "Mars", "Venus"]);
+// повертає["Earth", "Venus"]
+// getExtremeElements(["apple", "peach", "pear", "banana"]);
+// повертає["apple", "banana"]
+
+// =====================================================================
+// Сервісу гравірування прикрас потрібна функція, яка б автоматично рахувала ціну гравірування, залежно від кількості слів і ціни за слово.
+
+// Оголошена функція calculateEngravingPrice(message, pricePerWord). Ця функція приймає рядок, що складається зі слів, розділених лише пробілами (параметр message) та ціну гравірування одного слова (параметр pricePerWord).
+
+// Напиши тіло функції, щоб вона повертала загальну вартість гравірування усіх слів в рядку.
+// ---------------------------------------------------------------------------
+// function calculateEngravingPrice(message, pricePerWord) {
+//    // Change code below this line
+//     const messageIndex = message.split(' ').length;
+//     console.log(messageIndex);
+//     const EngravingPrice = messageIndex * pricePerWord;
+//     console.log(EngravingPrice);
+
+//   return EngravingPrice;
+
+//    // Change code above this line
+// }
+// calculateEngravingPrice("JavaScript is in my blood", 10);
+// calculateEngravingPrice("JavaScript is in my blood", 20);
+// calculateEngravingPrice("Web-development is creative work", 40);
+// calculateEngravingPrice("Web-development is creative work", 20);
+// =========================================================================
+
+// Доповни код функції makeStringFromArray(array, delimiter)
+//  таким чином, щоб вона повертала у змінній string результат
+//   з'єднання елементів масиву array з роздільником delimiter
+//     - рядок.
+// ----------------------------------------------------------------------
+
+// function makeStringFromArray(array, delimiter) {
+//   let string;
+//   // Change code below this line
+//     string = array.join(delimiter);
+//     console.log(string);
+
+
+//   // Change code above this line
+//   return string;
+// }
+
+// makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " ");
+// // "Mango hurries to the train"
+// makeStringFromArray(["M", "a", "n", "g", "o"], "");
+// // "Mango"
+// makeStringFromArray(["top", "picks", "for", "you"], "_");
+// // "top_picks_for_you"
+// =======================================================================
+
+// Термін slug - це людино - зрозумілий унікальний ідентифікатор,
+//     який використовується у веб - розробці для створення
+// читабельних URL - адрес.
+
+//     Наприклад, замість того, щоб користувач побачив в адресному
+// рядку mysite.com / posts / 1q8fh74tx, можна зробити slug з назви
+// статті.
+// В результаті адреса буде приємнішою для сприйняття:
+// mysite.com / posts / arrays-for-begginers.
+
+// Увага
+// Slug - це завжди рядок у нижньому регістрі, слова якого
+// розділені тире.
+
+// Напиши функцію slugify(title), яка приймає заголовок статті,
+//     параметр title, і повертає slug, створений з цього рядка.
+
+// Значенням параметра title будуть рядки, слова яких розділені
+// лише пробілами
+// Усі символи slug повинні бути у нижньому регістрі
+// Всі слова slug повинні бути розділені тире
+// ----------------------------------------------------------------------
+
+// function slugify(title) {
+//   // Change code below this line
+        
+//     const slug = title.toLowerCase().split(' ').join('-');
+// console.log(slug);
+//     return slug;
+
+//   // Change code above this line
+// }
+// slugify("Arrays for begginers");
+// // "arrays-for-begginers"
+// slugify("English for developer");
+// // "english-for-developer"
+// slugify("Ten secrets of JavaScript");
+// // "ten-secrets-of-javascript"
+// slugify("How to become a JUNIOR developer in TWO WEEKS");
+// // "how-to-become-a-junior-developer-in-two-weeks"
+// =======================================================================
+
+// МЕТОД SLICE()
+
+// Доповни код таким чином, щоб змінні містили часткові копії
+//  вихідного масиву fruits.
+
+// firstTwoEls - масив із перших двох елементів
+// nonExtremeEls - масив з усіх елементів, крім першого та останнього
+// lastThreeEls - масив із трьох останніх елементів
+// -----------------------------------------------------------------
+
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, -1);
+// const lastThreeEls = fruits.slice(-3);
+
+// console.log(firstTwoEls);
+// // "apple", "plum"
+// console.log(nonExtremeEls);
+// // "plum", "pear", "orange"
+// console.log(lastThreeEls);
+// // "pear", "orange", "banana"
+// ====================================================================
+
+// МЕТОД CONCAT()
+
+// Доповни код таким чином, щоб у змінній allClients утворився масив
+//  усіх елементів масивів oldClients і newClients.
+// ------------------------------------------------------------------
+
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+
+// const allClients = oldClients.concat(newClients);
+
+// console.log(oldClients);
+// // "Mango", "Ajax", "Poly", "Kiwi"
+// console.log(newClients);
+// // "Peach", "Houston"
+// console.log(allClients);
+// // "Mango", "Ajax", "Poly", "Kiwi", "Peach", "Houston"
+// ===================================================================
+
+// ЗАДАЧА: КОМПОЗИЦІЯ МАСИВІВ
+
+// Напиши функцію makeArray(firstArray, secondArray, maxLength)
+// для створення нового масиву з усіма елементами двох вихідних
+// firstArray і secondArray.Параметр maxLength містить максимально
+// допустиму довжину нового масиву.
+
+// Якщо кількість елементів нового масиву більша за maxLength,
+// функція повинна повернути копію масиву довжиною maxLength
+// елементів.В іншому випадку функція повинна повернути новий
+// масив повністю.
+// --------------------------------------------------------------
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//     const newArray = firstArray.concat(secondArray).slice(0, maxLength);
+//     console.log(newArray);
+//     return newArray;
+// }
+  
+// makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3);
+// // ["Mango", "Poly", "Ajax"]
+// makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4);
+// // ["Mango", "Poly", "Houston", "Ajax"]
+// makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3);
+// // ["Mango", "Ajax", "Chelsea"]
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2);
+// // ["Earth", "Jupiter"]
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4);
+// // ["Earth", "Jupiter", "Neptune", "Uranus"]
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0);
+// // []
+// ==============================================================
+
+// ЗАДАЧА: СУМА ЧИСЕЛ (ЦИКЛ FOR)
+
+// Напиши функцію calculateTotal(number), яка приймає ціле число
+// (параметр number) і повертає суму всіх цілих чисел від одиниці
+// і до цього числа.Наприклад, якщо number дорівнює 3, то сума -
+// це 1 + 2 + 3, тобто 6.
+// ----------------------------------------------------------------
+
+// function calculateTotal(number) {
+//     let total = 0;
+
+//     for (let i = 0; i <= number; i += 1) {
+//         total += i;
+//     }
+// console.log(total);
+
+//     return total;
+// }
+
+// calculateTotal(1);
+// // 1
+// calculateTotal(3);
+// // 6
+// calculateTotal(7);
+// // 28
+// calculateTotal(18);
+// // 171
+// calculateTotal(24);
+// 300
+// ========================================================
+
+// ЗАДАЧА: ОБЧИСЛЕННЯ СУМИ ПОКУПКИ
+
+// Напиши функцію calculateTotalPrice(order), яка приймає
+// один параметр order - масив чисел, і обчислює загальну
+// суму його елементів.Загальна сума елементів повинна зберігатися
+// у змінній total, яка повертається як результат роботи функції.
+// -------------------------------------------------------------
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+  
+   
+
+//     for (let i = 0; i < order.length; i += 1) {
+//         total += order[i];
+//     }
+//     console.log(total);
+
+//   return total;
+// }
+
+// calculateTotalPrice([12, 85, 37, 4]);
+// // 138
+// calculateTotalPrice([164, 48, 291]);
+// // 503
+// calculateTotalPrice([412, 371, 94, 63, 176]);
+// // 1116
+// ==============================================================
+
+// ЗАДАЧА: ПОШУК НАЙДОВШОГО СЛОВА
+
+// Напиши функцію findLongestWord(string), яка приймає
+// довільний рядок, що складається тільки зі слів, розділених
+// пробілом(параметр string), і повертає найдовше слово в цьому
+// рядку.
+// -------------------------------------------------------------
+
+// function findLongestWord(string) {
+//     const array = string.split(' ');
+//     console.log(array);
+      
+//     let LongestWordIndex = array[0].length;
+//     console.log(LongestWordIndex);
+
+//     let LongestWord = array[0];
+//     console.log(LongestWord);
+
+//     for (let i = 0; i < array.length; i += 1) {
+//         if (LongestWordIndex < array[i].length) {
+//             LongestWordIndex = array[i].length;
+//             console.log(LongestWordIndex);
+//             LongestWord = array[i];
+//             console.log(LongestWord);
+
+//         }
+//     }
+ 
+//     return LongestWord;
+// }
+
+// findLongestWord("The quick brown fox jumped over the lazy dog");
+// // jumped
+// findLongestWord("Google do a roll");
+// // Google
+// findLongestWord("May the force be with you");
+// // force
+// ===================================================================
+
+// МЕТОД PUSH()
+
+// Доповни код функції createArrayOfNumbers(min, max) таким чином,
+// щоб вона повертала масив усіх цілих чисел від значення
+// min до max.
+// ----------------------------------------------------------------
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+ 
+//     for (let i = min; i <= max; i += 1) {
+//         numbers.push(i);
+        // }
+
+//     console.log(numbers);
+
+//   return numbers;
+// }
+
+// createArrayOfNumbers(1, 3);
+// // [1, 2, 3]
+// createArrayOfNumbers(14, 17);
+// // [14, 15, 16, 17]
+// createArrayOfNumbers(29, 34);
+// // [29, 30, 31, 32, 33, 34]
+// ===============================================================
+
+
+
+
+// ЗАДАЧА: ФІЛЬТРАЦІЯ МАСИВУ ЧИСЕЛ
+
+// Напиши функцію filterArray(numbers, value), яка приймає масив
+// чисел(параметр numbers) і повертає новий масив, в якому будуть
+// тільки ті елементи масиву numbers, які більші за значення
+// параметра value(число).
+// ------------------------------------------------------------------
+// 1) for
+
+// function filterArray(numbers, value) {
+//    // Change code below this line
+//     const newArray = [];
+  
+//     for (let i = 0; i < numbers.length; i += 1) {
+
+//         if (numbers[i] > value) {
+//             newArray.push(numbers[i]);
+//         }
+//     }
+//     console.log(newArray);
+
+//     return newArray;
+
+//   // Change code above this line
+//     }
+
+// filterArray([1, 2, 3, 4, 5], 3);
+// // [4, 5]
+// filterArray([1, 2, 3, 4, 5], 4);
+// // [5]
+// filterArray([1, 2, 3, 4, 5], 5);
+// // []
+// filterArray([12, 24, 8, 41, 76], 38);
+// // [41, 76]
+// filterArray([12, 24, 8, 41, 76], 20);
+// // [24, 41, 76]
+
+// 2) for...of
+
+// function filterArray(numbers, value) {
+//    // Change code below this line
+//     const newArray = [];
+  
+//     for (const number of numbers) {
+//         if (number > value) {
+//             newArray.push(number);
+//        }
+//    }
+//     console.log(newArray);
+
+//     return newArray;
+
+//   // Change code above this line
+//     }
+
+// filterArray([1, 2, 3, 4, 5], 3);
+// // [4, 5]
+// filterArray([1, 2, 3, 4, 5], 4);
+// // [5]
+// filterArray([1, 2, 3, 4, 5], 5);
+// // []
+// filterArray([12, 24, 8, 41, 76], 38);
+// // [41, 76]
+// filterArray([12, 24, 8, 41, 76], 20);
+// // [24, 41, 76]
+// ===============================================================
+
+
+
+// МЕТОД INCLUDES()
+
+// Функція checkFruit(fruit) приймає рядок з назвою фрукта
+// (параметр fruit), і перевіряє, чи присутній такий фрукт
+// в масиві fruits.
+
+// Доповни код функції таким чином, що якщо:
+
+// фрукт присутній в масиві, то функція повертає true;
+// фрукт відсутній в масиві, то функція повертає false.
+// ----------------------------------------------------------------
+
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+
+//   return fruits.includes(fruit); // Change this line
+// }
+
+// checkFruit("plum");
+// // true
+// checkFruit("mandarin");
+// // false
+// checkFruit("pear");
+// // true
+// checkFruit("Pear");
+// // false
+// checkFruit("apple");
+// // true
+// ==================================================================
+
+
+
+// ЗАДАЧА: СПІЛЬНІ ЕЛЕМЕНТИ
+
+// Спільними елементами масивів називають ті елементи,
+// які присутні у всіх масивах.
+
+//  Наприклад, у двох масивах[1, 3, 5] і[0, 8, 5, 3]
+// спільними будуть числа 3 і 5, оскільки вони присутні
+// в обох вихідних масивах.А числа 0, 1 і 8 присутні тільки
+// в одному з масивів.
+
+// Напиши функцію getCommonElements(array1, array2),
+// яка отримує два масиви довільної довжини в параметри
+// array1 і array2, і повертає новий масив, що складається
+// з тих елементів, які присутні в обох вихідних масивах.
+// -----------------------------------------------------------------
+
+// 1) for...of
+
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//     const commonElements = [];
+
+//     for (const element of array1) {
+//         // console.log(element);
+        
+//         if (array2.includes(element)) {
+//             commonElements.push(element);
+//         }
+//     }
+//     // console.log(element);
+//     console.log(commonElements);
+
+//     return commonElements;
+
+//  // Change code above this line
+// }
+
+// getCommonElements([1, 2, 3], [2, 4]);
+// // [2]
+// getCommonElements([1, 2, 3], [2, 1, 17, 19]);
+// // [1, 2]
+// getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]);
+// // [12, 27, 3]
+// getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]);
+// // [10, 30, 40]
+// getCommonElements([1, 2, 3], [10, 20, 30]);
+// // []
+
+// ----------------------------------
+
+// 2) for
+
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//     const commonElements = [];
+
+//     for (let i = 0;  i < array1.length; i += 1) {
+
+//         if (array2.includes(array1[i])) {
+//             commonElements.push(array1[i]);
+//         }
+//     }
+//     // console.log(element);
+//     console.log(commonElements);
+
+//     return commonElements;
+
+//  // Change code above this line
+// }
+
+// getCommonElements([1, 2, 3], [2, 4]);
+// // [2]
+// getCommonElements([1, 2, 3], [2, 1, 17, 19]);
+// // [1, 2]
+// getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]);
+// // [12, 27, 3]
+// getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]);
+// // [10, 30, 40]
+// getCommonElements([1, 2, 3], [10, 20, 30]);
+// // []
+// ===================================================================
+
+
+// ЗАДАЧА: ПАРНІ ЧИСЛА
+
+// Напиши функцію getEvenNumbers(start, end), яка повертає масив
+// усіх парних чисел від start до end.Парним вважається число,
+// яке ділиться на 2 без остачі(10 % 2 === 0).
+// --------------------------------------------------------
+
+// function getEvenNumbers(start, end) {
+//    // Change code below this line
+//     const evenNumbers = [];
+
+//     for (let i = start; i <= end; i += 1) {
+// console.log(i);
+
+//         if (i % 2 === 0) {
+//             evenNumbers.push(i);
+//         }
+//     }
+
+//     console.log(evenNumbers);
+
+//     return evenNumbers;
+
+//     // Change code above this line
+//   }
+
+// getEvenNumbers(2, 5);
+// // [2, 4]
+// getEvenNumbers(3, 11);
+// // [4, 6, 8, 10]
+// getEvenNumbers(6, 12);
+// // [6, 8, 10, 12]
+// getEvenNumbers(8, 8);
+// // [8]
+// getEvenNumbers(7, 7);
+// // []
+// =========================================================
+
+
+// BREAK
+
+// Доповни код таким чином, щоб у змінну number записувалося
+// перше число від start до end, яке ділиться на 5 без остачі.
+// --------------------------------------------------------------
+
+
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+
+// - Оголошена змінна start зі значенням 6
+// - Оголошена змінна end зі значенням 27
+// - Оголошена змінна number без ініціалізації
+// - Підсумкове значення змінної number дорівнює 10
+// - В циклі for використовується break для виходу до
+//   завершення усіх ітерацій циклу
+// =============================================================
+
+
+// ОПЕРАТОР BREAK VS RETURN У ФУНКЦІЇ
+
+// Виконай рефакторинг функції findNumber(start, end, divisor)
+// таким чином, щоб вона: повертала перше число від start до end,
+// яке ділиться на divisor без остачі не використала оператор break
+// не використала змінну number
+// ------------------------------------------------------------
+
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//       return number;
+//     }
+//   }
+
+  
+//   // Change code above this line
+// }
+
+// findNumber(2, 6, 5);
+// // 5
+// findNumber(8, 17, 3);
+// // 9
+// findNumber(6, 9, 4);
+// // 8
+// findNumber(16, 35, 7);
+// // 21
+// ===========================================================
+
+
+// ЗАДАЧА: ФУНКЦІЯ INCLUDES()
+
+// Напиши функцію includes(array, value), яка робить те саме,
+// що і метод масиву масив.includes(значення) - перевіряє,
+// чи присутнє в масиві array значення value, повертаючи true,
+// якщо присутнє, і false в іншому випадку.
+
+// При виконанні цього завдання в тілі функції includes()
+// не можна використовувати метод масив.includes(значення).
+// ----------------------------------------------------------------
+
+// function includes(array, value) {
+//   // Change code below this line
+//     let result = false;
+
+//     for (const element of array) {
+//         // console.log(array);
+//         if (value === element) {
+            
+//             result = true;
+//             console.log(result);
+//             return result;
+
+//         }
+//     }
+// console.log(result);
+//     return result;
+//   // Change code above this line
+// }
+
+
+// includes([1, 2, 3, 4, 5], 3);
+// // true
+// includes([1, 2, 3, 4, 5], 17);
+// // false
+// includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter");
+// // true
+// includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus");
+// // false
+// includes(["apple", "plum", "pear", "orange"], "plum");
+// // true
+// includes(["apple", "plum", "pear", "orange"], "kiwi");
+// // false
