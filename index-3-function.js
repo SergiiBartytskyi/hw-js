@@ -318,7 +318,6 @@
 // -------------------------------------------------------------------
 
 // const checkAge = function (age) {
-   
 
 //   if (age >= 18) {
 //    return  "Ви повнолітня людина";
@@ -326,7 +325,7 @@
 
 //     return "Ви неповнолітня людина";
 // }
-  
+
 // console.log(checkAge(20));
 // // ========================================================================
 // Напиши функцію getExtremeElements(array), яка приймає один параметр array
@@ -334,7 +333,7 @@
 //      з двох елементів - першого і останнього елемента параметра array.
 
 // function getExtremeElements(array) {
-  
+
 //     let ExtremeElements = [array[0], array[array.length - 1]];
 //     console.log(ExtremeElements);
 
@@ -384,7 +383,6 @@
 //     string = array.join(delimiter);
 //     console.log(string);
 
-
 //   // Change code above this line
 //   return string;
 // }
@@ -422,7 +420,7 @@
 
 // function slugify(title) {
 //   // Change code below this line
-        
+
 //     const slug = title.toLowerCase().split(' ').join('-');
 // console.log(slug);
 //     return slug;
@@ -501,7 +499,7 @@
 //     console.log(newArray);
 //     return newArray;
 // }
-  
+
 // makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3);
 // // ["Mango", "Poly", "Ajax"]
 // makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4);
@@ -557,8 +555,6 @@
 
 // function calculateTotalPrice(order) {
 //   let total = 0;
-  
-   
 
 //     for (let i = 0; i < order.length; i += 1) {
 //         total += order[i];
@@ -587,7 +583,7 @@
 // function findLongestWord(string) {
 //     const array = string.split(' ');
 //     console.log(array);
-      
+
 //     let LongestWordIndex = array[0].length;
 //     console.log(LongestWordIndex);
 
@@ -603,7 +599,7 @@
 
 //         }
 //     }
- 
+
 //     return LongestWord;
 // }
 
@@ -624,10 +620,10 @@
 
 // function createArrayOfNumbers(min, max) {
 //   const numbers = [];
- 
+
 //     for (let i = min; i <= max; i += 1) {
 //         numbers.push(i);
-        // }
+// }
 
 //     console.log(numbers);
 
@@ -642,9 +638,6 @@
 // // [29, 30, 31, 32, 33, 34]
 // ===============================================================
 
-
-
-
 // ЗАДАЧА: ФІЛЬТРАЦІЯ МАСИВУ ЧИСЕЛ
 
 // Напиши функцію filterArray(numbers, value), яка приймає масив
@@ -657,7 +650,7 @@
 // function filterArray(numbers, value) {
 //    // Change code below this line
 //     const newArray = [];
-  
+
 //     for (let i = 0; i < numbers.length; i += 1) {
 
 //         if (numbers[i] > value) {
@@ -687,7 +680,7 @@
 // function filterArray(numbers, value) {
 //    // Change code below this line
 //     const newArray = [];
-  
+
 //     for (const number of numbers) {
 //         if (number > value) {
 //             newArray.push(number);
@@ -711,8 +704,6 @@
 // filterArray([12, 24, 8, 41, 76], 20);
 // // [24, 41, 76]
 // ===============================================================
-
-
 
 // МЕТОД INCLUDES()
 
@@ -744,8 +735,6 @@
 // // true
 // ==================================================================
 
-
-
 // ЗАДАЧА: СПІЛЬНІ ЕЛЕМЕНТИ
 
 // Спільними елементами масивів називають ті елементи,
@@ -770,7 +759,7 @@
 
 //     for (const element of array1) {
 //         // console.log(element);
-        
+
 //         if (array2.includes(element)) {
 //             commonElements.push(element);
 //         }
@@ -828,7 +817,6 @@
 // // []
 // ===================================================================
 
-
 // ЗАДАЧА: ПАРНІ ЧИСЛА
 
 // Напиши функцію getEvenNumbers(start, end), яка повертає масив
@@ -867,13 +855,11 @@
 // // []
 // =========================================================
 
-
 // BREAK
 
 // Доповни код таким чином, щоб у змінну number записувалося
 // перше число від start до end, яке ділиться на 5 без остачі.
 // --------------------------------------------------------------
-
 
 // const start = 6;
 // const end = 27;
@@ -886,7 +872,6 @@
 //   }
 // }
 
-
 // - Оголошена змінна start зі значенням 6
 // - Оголошена змінна end зі значенням 27
 // - Оголошена змінна number без ініціалізації
@@ -894,7 +879,6 @@
 // - В циклі for використовується break для виходу до
 //   завершення усіх ітерацій циклу
 // =============================================================
-
 
 // ОПЕРАТОР BREAK VS RETURN У ФУНКЦІЇ
 
@@ -905,18 +889,15 @@
 // ------------------------------------------------------------
 
 // function findNumber(start, end, divisor) {
-//   // Change code below this line
-//   let number;
-
-//   for (let i = start; i < end; i += 1) {
-//     if (i % divisor === 0) {
-//       number = i;
-//       return number;
-//     }
-//   }
-
-  
-//   // Change code above this line
+// 	// Change code below this line
+// 	let number;
+// 	for (let i = start; i < end; i += 1) {
+// 		if (i % divisor === 0) {
+// 			number = i;
+// 			return number;
+// 		}
+// 	}
+// 	// Change code above this line
 // }
 
 // findNumber(2, 6, 5);
@@ -928,7 +909,6 @@
 // findNumber(16, 35, 7);
 // // 21
 // ===========================================================
-
 
 // ЗАДАЧА: ФУНКЦІЯ INCLUDES()
 
@@ -948,7 +928,6 @@
 //     for (const element of array) {
 //         // console.log(array);
 //         if (value === element) {
-            
 //             result = true;
 //             console.log(result);
 //             return result;
@@ -959,7 +938,6 @@
 //     return result;
 //   // Change code above this line
 // }
-
 
 // includes([1, 2, 3, 4, 5], 3);
 // // true
@@ -974,173 +952,680 @@
 // includes(["apple", "plum", "pear", "orange"], "kiwi");
 // // false
 
-// const atTheOldToad = {
-//   potions: [
-//     { name: "Speed potion", price: 460 },
-//     { name: "Dragon breath", price: 780 },
-//     { name: "Stone skin", price: 520 },
-//   ],
-  // Change code below this line
-//   getPotions() {
-//     return this.potions;
-//   },
-//   addPotion(newPotion) {
+// =======================================================================================
+// const user = {
+// 	name: "Jacques Gluke",
+// 	tag: "jgluke",
+// 	location: {
+// 		country: "Jamaica",
+// 		city: "Ocho Rios",
+// 	},
+// 	hobbies: ["swiming", "music", "sci-fi"],
+// };
 
-//     for (const potion of this.potions) {
-      
-//       if (potion.name === newPotion.name) {
-//       return `Error! Potion ${newPotion.name} is already in your inventory!`;
-//       }
-//     }
-    
-//     this.potions.push(newPotion);
-//   },
-  
-//   removePotion(potionName) {
-// for (const potion of this.potions) {
-// //   const potionNameIndex = this.potions[potion[potionName]];
-// //         console.table(potionNameIndex);
-        
-//         if (this.potions[potion.name] === potionName) {
-//                 this.potions.splice(this.potions[potion]);
-                
-//         }
-//         console.table(this.potions);
+// const hobbies = user.hobbies;
+// console.log(hobbies); // ["swiming", "music", "sci-fi"]
+
+// const firstHobby = user.hobbies[0];
+// console.log(firstHobby); // "swiming"
+
+// const numberOfHobbies = user.hobbies.length;
+// console.log(numberOfHobbies); // 3
+
+// const lastHobbies = user.hobbies[user.hobbies.length - 1];
+// console.log(lastHobbies); // "sci-fi"
+
+// const apartment = {
+// 	imgUrl: "https://via.placeholder.com/640x480",
+// 	descr: "Spacious apartment in the city center",
+// 	rating: 4,
+// 	price: 2153,
+// 	tags: ["premium", "promoted", "top"],
+// };
+
+// // Change code below this line
+// const aptRating = apartment["rating"];
+// console.log(aptRating); //
+// const aptDescr = apartment["descr"];
+// console.log(aptDescr); //
+// const aptPrice = apartment["price"];
+// console.log(aptPrice); //
+// const aptTags = apartment["tags"];
+// console.log(aptTags); //
+
+// =========================================================================================
+
+// ЗАДАЧА. ПІДРАХУНОК ВЛАСТИВОСТЕЙ 2.0
+
+// Виконай рефакторинг функції countProps(object), використовуючи метод Object.keys() і, можливо,
+// але не обов'язково, цикл for...of.
+// ------------------------------------------------------------------------------------------
+// function countProps(object) {
+// 	// Change code below this line
+// 	let propCount = Object.keys(object).length;
+
+// 	console.log(propCount);
+// 	return propCount;
+// 	// Change code above this line
 // }
-    
-    // for (let i = 0; i < this.potions.length; i += 1) {
 
-    //   if (potionName === this.potions[i].name) {
-    //     this.potions.splice(i, 1);
-    //   }
-    // }
+// countProps({});
+// // 0
+// countProps({ name: "Mango", age: 2 });
+// // 2
+// countProps({ mail: "poly@mail.com", isOnline: true, score: 500 });
+// // 3
 
-//     return `Potion ${potionName} is not in inventory!`;
+// =====================================================================================
+
+// ЗАДАЧА: ВИТРАТИ НА ЗАРПЛАТУ
+
+// Напиши функцію countTotalSalary(salaries), яка приймає об'єкт зарплат, де ім'я властивості -
+// це ім'я співробітника, а значення властивості - це зарплата. Функція повинна
+// розрахувати загальну суму зарплат співробітників і повернути її.Використовуй
+// змінну totalSalary для зберігання загальної суми зарплати.
+// ----------------------------------------------------------------------------------
+// function countTotalSalary(salaries) {
+// 	let totalSalary = 0;
+// 	// Change code below this line
+
+// 	const values = Object.values(salaries);
+
+// 	for (const value of values) {
+// 		totalSalary += value;
+// 	}
+
+// 	console.log(totalSalary);
+// 	// Change code above this line
+// 	return totalSalary;
+// }
+
+// Оголошена функція countTotalSalary(salaries)
+// Виклик countTotalSalary({}) повертає 0
+// Виклик countTotalSalary({ mango: 100, poly: 150, alfred: 80 }) повертає 330
+// Виклик countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }) повертає 400
+// Функція враховує тільки власні властивості об'єкта
+// =============================================================================================
+
+// ЗАДАЧА. КАРТКИ ЗАВДАНЬ
+
+// Напиши функцію makeTask(data) яка приймає один параметр data - об'єкт з наступними властивостями.
+
+// text - текст завдання.
+// category - категорія завдання.
+// priority - пріоритет завдання.
+// Функція повинна створити і повернути новий об'єкт завдання, не змінюючи напряму параметр data.
+// У новому об'єкті повинна бути властивість completed, значення якої зберігається в однойменній
+// локальній змінній.
+
+// В параметрі data гарантовано буде тільки властивість text, а інші дві, category і priority,
+// можуть бути відсутніми.Тоді, в новому об'єкті завдання, у властивостях category і priority
+// повинні бути значення за замовчуванням, що зберігаються в однойменних локальних змінних.
+// -------------------------------------------------------------------------------------------------
+// function makeTask(data) {
+// 	const completed = false;
+// 	const category = "General";
+// 	const priority = "Normal";
+// 	// Change code below this line
+// 	const task = { category, priority, ...data, completed };
+
+// 	return task;
+// 	// Change code above this line
+// }
+
+// - Оголошена функція makeTask(data)
+// - Виклик makeTask({}) повертає { category: "General", priority: "Normal", completed: false }
+// - Виклик makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" })
+// повертає { category: "Homemade", priority: "Low", text: "Take out the trash", completed: false }
+// - Виклик makeTask({ category: "Finance", text: "Take interest" }) повертає {
+//   category: "Finance",
+//   priority: "Normal", text: "Take interest", completed: false
+// }
+// - Виклик makeTask({ priority: "Low", text: "Choose shampoo" }) повертає
+// { category: "General", priority: "Low", text: "Choose shampoo", completed: false }
+// - Виклик makeTask({ text: "Buy bread" }) повертає
+// { category: "General", priority: "Normal", text: "Buy bread", completed: false }
+// ================================================================================================
+
+// ЗАДАЧА.КРАМНИЦЯ ЗІЛЛЯ «У СТАРОЇ ЖАБИ»
+
+// До нас звернулася власниця крамниці зілля «У старої жаби» і замовила програму для
+// ведення інвентарю - додавання, видалення, пошуку та оновлення зілля.
+// Додай об'єкту atTheOldToad властивість potions, значенням якої зроби порожній масив.
+
+// -----------------------------------------------------------------------------------------------
+
+// const atTheOldToad = {
+// 	// Change code below this line
+
+// 	potions: [],
+
+// 	// Change code above this line
+// };
+
+// Оголошена змінна atTheOldToad
+// Значення змінної atTheOldToad - це об'єкт
+// Значення властивості atTheOldToad.potions - це масив []
+// ================================================================================================
+
+// ЗАДАЧА.ОТРИМУЄМО ВСЕ ЗІЛЛЯ
+
+// Додай об'єкту atTheOldToad метод getPotions(), який просто повертає значення властивості potions.
+// --------------------------------------------------------------------------------------------------
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   // Change code below this line
+// getPotions() {
+//   return this.potions;
 // },
-//   updatePotionName(oldName, newName) {
+//   // Change code above this line
+// };
 
-//     for (const potion of this.potions) {
-      
-//       if (potion.name === oldName) {
-//         potion.name = newName;
-//       }
-        
-//    }
-//     return `Potion ${oldName} is not in inventory!`;
+// - Оголошена змінна atTheOldToad
+// - Значення змінної atTheOldToad - це об'єкт
+// - Значення властивості atTheOldToad.potions - це масив ["Speed potion", "Dragon breath", "Stone skin"]
+// - Значення властивості atTheOldToad.getPotions - це метод об'єкта
+// - Виклик методу atTheOldToad.getPotions() повертає ["Speed potion", "Dragon breath", "Stone skin"]
+// ====================================================================================================
+
+// ЗАДАЧА: ДОДАЄМО НОВЕ ЗІЛЛЯ
+
+// Доповни метод addPotion(potionName) таким чином, щоб він додавав зілля potionName в кінець
+// масиву зілля у властивості potions.
+// --------------------------------------------------------------------------------------------------
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   addPotion(potionName) {
+//     // Change code below this line
+
+//     this.potions.push(potionName);
+
+//     // Change code above this line
 //   },
-  // Change code above this line
+// };
+
+// - Оголошена змінна atTheOldToad
+// - Значення змінної atTheOldToad - це об'єкт
+// - Значення властивості atTheOldToad.potions - це масив
+//      ["Speed potion", "Dragon breath", "Stone skin"]
+// - Значення властивості atTheOldToad.addPotion - це метод об'єкта
+// - Після першого виклику методу atTheOldToad.addPotion("Invisibility"),
+//      у властивості potions буде масив["Speed potion", "Dragon breath", "Stone skin", "Invisibility"]
+// - Після другого виклику методу atTheOldToad.addPotion("Power potion"), у властивості potions
+//      буде масив["Speed potion", "Dragon breath", "Stone skin", "Invisibility", "Power potion"]
+// ===================================================================================================
+
+// ЗАДАЧА: ВИДАЛЯЄМО ЗІЛЛЯ
+
+// Доповни метод removePotion(potionName) таким чином, щоб він видаляв
+// зілля potionName з масиву зілля у властивості potions.
+// ---------------------------------------------------------------------------------------------------
+
+// const atTheOldToad = {
+// 	potions: ["Speed potion", "Dragon breath", "Stone skin"],
+// 	removePotion(potionName) {
+// 		// Change code below this line
+// 		const potionsIndex = this.potions.indexOf(potionName);
+// 		this.potions.splice(potionsIndex, 1);
+
+// 		// Change code above this line
+// 	},
+// };
+
+// - Оголошена змінна atTheOldToad
+// - Значення змінної atTheOldToad - це об'єкт
+// - Значення властивості atTheOldToad.potions - це масив
+//      ["Speed potion", "Dragon breath", "Stone skin"]
+// - Значення властивості atTheOldToad.removePotion - це метод об'єкта
+// - Після першого виклику методу atTheOldToad.removePotion("Dragon breath"),
+//     у властивості potions буде масив["Speed potion", Stone skin"]
+// - Після другого виклику методу atTheOldToad.removePotion("Speed potion"),
+//     у властивості potions буде масив["Stone skin"]
+// ===================================================================================================
+
+// ЗАДАЧА: ОНОВЛЮЄМО ЗІЛЛЯ
+
+// Доповни метод updatePotionName(oldName, newName) таким чином, щоб він оновлював
+// назву зілля з oldName на newName в масиві зілля у властивості potions.
+// -------------------------------------------------------------------------------------------------
+
+// const atTheOldToad = {
+// 	potions: ["Speed potion", "Dragon breath", "Stone skin"],
+// 	updatePotionName(oldName, newName) {
+// 		// Change code below this line
+// 		const findPotions = this.potions.indexOf(oldName);
+// 		this.potions.splice(findPotions, 1, newName);
+
+// 		// Change code above this line
+// 	},
+// };
+
+// - Оголошена змінна atTheOldToad
+// - Значення змінної atTheOldToad - це об'єкт
+// - Значення властивості atTheOldToad.potions - це масив
+//      ["Speed potion", "Dragon breath", "Stone skin"]
+// - Значення властивості atTheOldToad.updatePotionName - це метод об'єкта
+// - Після першого виклику методу atTheOldToad.updatePotionName("Dragon breath", "Polymorth"),
+//     у властивості potions буде масив["Speed potion", "Polymorth", "Stone skin"]
+// - Після другого виклику методу atTheOldToad.updatePotionName("Stone skin", "Invisibility"),
+//     у властивості potions буде масив["Speed potion", "Polymorth", "Invisibility"]
+// ==================================================================================================
+
+// ЗАДАЧА: РОЗШИРЮЄМО ІНВЕНТАР
+
+// Замовниця хоче, щоб кожне зілля було представлено не тільки ім'ям, але й ціною,
+// а в майбутньому, можливо, й іншими характеристиками.Тому зараз у властивості potions
+// буде зберігатися масив об'єктів з наступними властивостями.
+
+// {
+//   name: "Dragon breath",
+//   price: 700
+// }
+
+// Виконай рефакторинг методів об'єкта atTheOldToad таким чином, щоб вони працювали
+// не з масивом рядків, а з масивом об'єктів.
+
+// getPotions() - метод для отримання всього зілля. Повертає значення властивості potions.
+// addPotion(newPotion) - додає зілля newPotion (вже об'єкт) в масив у властивості potions,
+// але тільки, якщо такого зілля ще немає в інвентарі.В іншому випадку повертається рядок.
+// removePotion(potionName) - видаляє об'єкт зілля з ім'ям potionName з масиву у властивості
+// potions.
+// updatePotionName(oldName, newName) - оновлює властивість name об'єкта-зілля з назвою
+// oldName на newName в масиві potions.
+// --------------------------------------------------------------------------------------------------
+
+// const atTheOldToad = {
+// 	potions: [
+// 		{ name: "Speed potion", price: 460 },
+// 		{ name: "Dragon breath", price: 780 },
+// 		{ name: "Stone skin", price: 520 },
+// 	],
+// 	// Change code below this line
+// 	getPotions() {
+// 		return this.potions;
+// 	},
+// 	addPotion(newPotion) {
+// 		for (const potion of this.potions) {
+// 			if (potion.name === newPotion.name) {
+// 				return `Error! Potion ${newPotion.name} is already in your inventory!`;
+// 			}
+// 		}
+
+// 		this.potions.push(newPotion);
+// 	},
+
+// 	removePotion(potionName) {
+// 		// for (const potion of this.potions) {
+// 		//   const potionNameIndex = this.potions[potion[potionName]];
+// 		//   console.log(potionNameIndex);
+// 		// }
+
+// 		for (let i = 0; i < this.potions.length; i += 1) {
+// 			if (potionName === this.potions[i].name) {
+// 				this.potions.splice(i, 1);
+// 			}
+// 		}
+
+// 		return `Potion ${potionName} is not in inventory!`;
+// 	},
+// 	updatePotionName(oldName, newName) {
+// 		for (const potion of this.potions) {
+// 			if (potion.name === oldName) {
+// 				potion.name = newName;
+// 			}
+// 		}
+// 		return `Potion ${oldName} is not in inventory!`;
+// 	},
+// 	// Change code above this line
+// };
+
+// - Оголошена змінна atTheOldToad
+// - Значення змінної atTheOldToad - це об'єкт
+// - Значення властивості atTheOldToad.getPotions - це метод об'єкта
+// - Виклик методу atTheOldToad.getPotions() для вихідного об'єкта повертає
+// [{ name: "Speed potion", price: 460 }, { name: "Dragon breath", price: 780 },
+// { name: "Stone skin", price: 520 }]
+// - Значення властивості atTheOldToad.addPotion - це метод об'єкта.
+// - Для вихідного об'єкта після виклику методу atTheOldToad.addPotion({ name: "Invisibility", price: 620 }),
+// в масиві potions останнім елементом буде цей об'єкт
+// - Для вихідного об'єкта після виклику методу atTheOldToad.addPotion({ name: "Power potion", price: 270 }),
+// в масиві potions останнім елементом буде цей об'єкт
+// - Якщо зілля, що додається, вже є в масиві potions, метод addPotion повертає рядок з текстом з вихідного
+// коду.
+// - Якщо зілля, що додається, вже є в масиві potions, метод addPotion не додає в нього переданий об'єкт
+//     - Для вихідного об'єкта після виклику atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }),
+// масив potions не змінюється
+// atTheOldToad.addPotion({ name: "Dragon breath", price: 700 });
+// console.table(atTheOldToad.potions);
+//     - Для вихідного об'єкта після виклику atTheOldToad.addPotion({ name: "Stone skin", price: 240 }),
+// массив potions не змінюється
+// atTheOldToad.addPotion({ name: "Stone skin", price: 240 });
+// console.table(atTheOldToad.potions);
+//     - Для вихідного об'єкта виклик atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }),
+// повертає рядок "Error! Potion Dragon breath is already in your inventory!"
+// atTheOldToad.addPotion({ name: "Dragon breath", price: 700 });
+// console.table(atTheOldToad.potions);
+//     - Для вихідного об'єкта виклик atTheOldToad.addPotion({ name: "Stone skin", price: 240 }),
+// повертає рядок "Error! Potion Stone skin is already in your inventory!"
+// - Значення властивості atTheOldToad.removePotion - це метод об'єкта
+//     - Для вихідного об'єкта після виклику методу atTheOldToad.removePotion("Dragon breath"),
+// у властивості potions буде масив[{ name: "Speed potion", price: 460 }, {
+//     name: "Stone skin",
+//     price: 520
+// }]
+// atTheOldToad.removePotion("Dragon breath");
+// console.table(atTheOldToad.potions);
+//     - Для вихідного об'єкта після виклику методу atTheOldToad.removePotion("Speed potion"),
+// у властивості potions буде масив[{ name: "Dragon breath", price: 780 }, {
+//     name: "Stone skin",
+//     price: 520
+// }]
+// - Значення властивості atTheOldToad.updatePotionName - це метод об'єкта
+//     - Для вихідного об'єкта після виклику методу atTheOldToad.updatePotionName("Dragon breath",
+// "Polymorth"), у властивості potions буде масив[{ name: "Speed potion", price: 460 },
+//     { name: "Polymorth", price: 780 }, { name: "Stone skin", price: 520 }]
+//     - Для вихідного об'єкта після виклику методу atTheOldToad.updatePotionName("Stone skin",
+// "Invulnerability potion"), у властивості potions буде масив[{ name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 }, { name: "Invulnerability potion", price: 520 }]
+// =================================================================================================
+
+// const atTheOldToad = {
+// 	potions: [
+// 		{ name: "Speed potion", price: 460 },
+// 		{ name: "Dragon breath", price: 780 },
+// 		{ name: "Stone skin", price: 520 },
+// 	],
+// 	// Change code below this line
+// 	getPotions() {
+// 		return this.potions;
+// 	},
+
+// 	addPotion(newPotion) {
+// 		for (const potion of this.potions) {
+// 			if (potion.name === newPotion.name) {
+// 				return `Error! Potion ${newPotion.name} is already in your inventory!`;
+// 			}
+// 		}
+// 		this.potions.push(newPotion);
+// 	},
+
+// 	removePotion(potionName) {
+// 		for (let i = 0; i < this.potions.length; i++) {
+// 			if (this.potions[i].name === potionName) {
+// 				this.potions.splice(i, 1);
+// 				return;
+// 			}
+// 		}
+// 		return `Potion ${potionName} is not in inventory!`;
+// 	},
+
+// 	updatePotionName(oldName, newName) {
+// 		for (const potion of this.potions) {
+// 			if (potion.name === oldName) {
+// 				potion.name = newName;
+// 			}
+// 		}
+// 		return `Potion ${oldName} is not in inventory!`;
+// 	},
+// 	// Change code above this line
 // };
 
 // atTheOldToad.getPotions();
-
 // atTheOldToad.addPotion({ name: "Invisibility", price: 620 });
-
+// console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
 // atTheOldToad.addPotion({ name: "Power potion", price: 270 });
-
+// console.log(atTheOldToad.addPotion({ name: "Power potion", price: 270 }));
 // atTheOldToad.addPotion({ name: "Dragon breath", price: 700 });
-
+// console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }));
 // atTheOldToad.addPotion({ name: "Stone skin", price: 240 });
-
+// console.log(atTheOldToad.addPotion({ name: "Stone skin", price: 240 }));
 // atTheOldToad.removePotion("Dragon breath");
-
-// atTheOldToad.updatePotionName("Dragon breath", "Polymorth")
-
+// console.log(atTheOldToad.removePotion("Dragon breath"));
+// atTheOldToad.removePotion("Speed potion");
+// console.log(atTheOldToad.removePotion("Speed potion"));
+// atTheOldToad.updatePotionName("Dragon breath", "Polymorth");
+// console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"));
 // atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion");
-// ==========================================================================
+// console.log(
+// 	atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion")
+// );
+// // ==========================================================================
+// const calculator = {
+// 	read(a, b) {
+// 		(this.x = a), (this.y = b);
+// 	},
 
-// reduce
-// ===================================================================
-// const solary = {
-//   mango: 100,
-//   pol: 50,
-//   ajax:150,
+// 	sum() {
+// 		return this.x + this.y;
+// 	},
+
+// 	mult() {
+// 		return this.x * this.y;
+// 	},
+// };
+
+// // const sum = () => calculator.x + calculator.y;
+
+// calculator.read(10, 5);
+// console.log(calculator.sum());
+// console.log(calculator.mult());
+
+// console.log(calculator.x, calculator.y);
+// console.log(calculator.sum());
+// console.log(calculator.mult());
+// ===========================================================================
+// Декілька колбеків
+// ----------------------------------------------------------------------------
+// Необхідно написати логіку обробки замовлення піци.Виконай рефакторинг методу
+// order таким чином, щоб він приймав другим і третім параметром два колбеки
+// onSuccess і onError.
+
+// Якщо у властивості pizzas відсутня піца з назвою з параметра pizzaName,
+//     метод order повинен повертати результат виклику колбека onError,
+//     передаючи йому аргументом рядок "There is no pizza with a name <имя пиццы>
+//         in the assortment."
+// Якщо у властивості pizzas присутня піца з назвою з параметра pizzaName,
+//     метод order повинен повертати результат виклику колбека onSuccess,
+//         передаючи йому аргументом назву замовленої піци.
+// Після оголошення об'єкта pizzaPalace ми додали колбеки і виклики методів.
+// Будь ласка, нічого там не міняй.
+// ------------------------------------------------------------------------------------
+// const pizzaPalace = {
+// 	pizzas: ["Ultracheese", "Smoked", "Four meats"],
+// 	order(pizzaName, onSuccess, onError) {
+// 		if (!this.pizzas.includes(pizzaName)) {
+// 			return onError(
+// 				`There is no pizza with a name ${pizzaName} in the assortment.`
+// 			);
+// 			console.log();
+// 		}
+// 		return onSuccess(pizzaName);
+// 	},
+// };
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+// 	return `Your order is accepted. Cooking pizza ${pizzaName}.`;
 // }
 
-// const totalSolary = Object.values(solary).reduce((total, value) => total + value, 0);
-// console.log(totalSolary);
-// ======================================================================
-// const users = [
-//   {
-//     name: "Moore Hensley",
-//     email: "moorehensley@indexia.com",
-//     eyeColor: "blue",
-//     friends: ["Sharron Pace"],
-//     isActive: false,
-//     balance: 2811,
-//     gender: "male",
-//     age: 37
-//   },
-//   {
-//     name: "Sharlene Bush",
-//     email: "sharlenebush@tubesys.com",
-//     eyeColor: "blue",
-//     friends: ["Briana Decker", "Sharron Pace"],
-//     isActive: true,
-//     balance: 3821,
-//     gender: "female",
-//     age: 34
-//   },
-//   {
-//     name: "Ross Vazquez",
-//     email: "rossvazquez@xinware.com",
-//     eyeColor: "green",
-//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-//     isActive: false,
-//     balance: 3793,
-//     gender: "male",
-//     age: 24
-//   },
-//   {
-//     name: "Elma Head",
-//     email: "elmahead@omatom.com",
-//     eyeColor: "green",
-//     friends: ["Goldie Gentry", "Aisha Tran"],
-//     isActive: true,
-//     balance: 2278,
-//     gender: "female",
-//     age: 21
-//   },
-//   {
-//     name: "Carey Barr",
-//     email: "careybarr@nurali.com",
-//     eyeColor: "blue",
-//     friends: ["Jordan Sampson", "Eddie Strong"],
-//     isActive: true,
-//     balance: 3951,
-//     gender: "male",
-//     age: 27
-//   },
-//   {
-//     name: "Blackburn Dotson",
-//     email: "blackburndotson@furnigeer.com",
-//     eyeColor: "brown",
-//     friends: ["Jacklyn Lucas", "Linda Chapman"],
-//     isActive: false,
-//     balance: 1498,
-//     gender: "male",
-//     age: 38
-//   },
-//   {
-//     name: "Sheree Anthony",
-//     email: "shereeanthony@kog.com",
-//     eyeColor: "brown",
-//     friends: ["Goldie Gentry", "Briana Decker"],
-//     isActive: true,
-//     balance: 2764,
-//     gender: "female",
-//     age: 39
-//   }
-// ]
-// Change code below this line
-// const getFriends = (users) => {
-//   const allFriend = this.users.flatMap(user => user.friends);
-//   console.log(allFriend);
-//   const uniqueFriends = allFriend.filter((user, index, array) =>
-//     array.IndexOf(user) === index);
-   
-// };
+// // Callback for onError
+// function onOrderError(error) {
+// 	return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// pizzaPalace.order("Smoked", makePizza, onOrderError);
+// console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));
+
+// pizzaPalace.order("Four meats", makePizza, onOrderError);
+// console.log(pizzaPalace.order("Four meats", makePizza, onOrderError));
+
+// pizzaPalace.order("Big Mike", makePizza, onOrderError);
+// console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
+
+// pizzaPalace.order("Vienna", makePizza, onOrderError);
+// console.log(pizzaPalace.order("Vienna", makePizza, onOrderError));
+// ================================================================================
+// function calculateTotalPrice(orderedItems) {
+// 	let totalPrice = 0;
+// 	// Change code below this line
+// 	orderedItems.forEach(function (item) {
+// 		totalPrice += item;
+// 	});
+
+// 	// Change code above this line
+// 	return totalPrice;
+// }
+// calculateTotalPrice([12, 85, 37, 4]);
+// console.log(calculateTotalPrice([12, 85, 37, 4])); //138
+
+// calculateTotalPrice([164, 48, 291]);
+// console.log(calculateTotalPrice([164, 48, 291])); //503
+
+// calculateTotalPrice([412, 371, 94, 63, 176]);
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176])); //1116
+
+// Попробувати переробити на стрілочну функцію
+// ---------------------------------------------------------------------------
+// function calculateTotalPrice(orderedItems) {
+// 	let totalPrice = 0;
+// 	// Change code below this line
+// 	orderedItems.forEach((item) => (totalPrice += item));
+
+// 	// Change code above this line
+// 	return totalPrice;
+// }
+// calculateTotalPrice([12, 85, 37, 4]);
+// console.log(calculateTotalPrice([12, 85, 37, 4])); //138
+
+// calculateTotalPrice([164, 48, 291]);
+// console.log(calculateTotalPrice([164, 48, 291])); //503
+
+// calculateTotalPrice([412, 371, 94, 63, 176]);
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176])); //1116
+// =================================================================================
+// function changeEven(numbers, value) {
+// 	// Change code below this line
+// 	const newArray = [];
+
+// 	numbers.forEach((number) => {
+// 		number % 2 === 0 ? newArray.push(number + value) : newArray.push(number);
+// 	});
+
+// 	return newArray;
+// 	// Change code above this line
+// }
+// changeEven([1, 2, 3, 4, 5], 10);
+// console.log(changeEven([1, 2, 3, 4, 5], 10)); //[1, 12, 3, 14, 5]
+
+// changeEven([2, 8, 3, 7, 4, 6], 10);
+// console.log(changeEven([2, 8, 3, 7, 4, 6], 10)); //[12, 18, 3, 7, 14, 16]
+
+// changeEven([17, 24, 68, 31, 42], 100);
+// console.log(changeEven([17, 24, 68, 31, 42], 100)); //[17, 124, 168, 31, 142]
+
+// changeEven([44, 13, 81, 92, 36, 54], 100);
+// console.log(changeEven([44, 13, 81, 92, 36, 54], 100)); //[144, 13, 81, 192, 136, 154]
+// ================================================================================
+// const students = [
+// 	{ name: "Mango", courses: ["mathematics", "physics"] },
+// 	{ name: "Poly", courses: ["science", "mathematics"] },
+// 	{ name: "Kiwi", courses: ["physics", "biology"] },
+// ];
+
+// students.map((student) => student.courses);
+// // [["mathematics", "physics"], ["science", "mathematics"], ["physics", "biology"]]
+
+// students.flatMap((student) => student.courses);
+// // ["mathematics", "physics", "science", "mathematics", "physics", "biology"];
+
+// const genres = books.flatMap(book => book.genres)
+// console.log(genres); //[ "adventure", "history", "fiction", "horror", "mysticism" ]
+
+const users = [
+	{
+		name: "Moore Hensley",
+		email: "moorehensley@indexia.com",
+		eyeColor: "blue",
+		friends: ["Sharron Pace"],
+		isActive: false,
+		balance: 2811,
+		skills: ["ipsum", "lorem"],
+		gender: "male",
+		age: 37,
+	},
+	{
+		name: "Sharlene Bush",
+		email: "sharlenebush@tubesys.com",
+		eyeColor: "blue",
+		friends: ["Briana Decker", "Sharron Pace"],
+		isActive: true,
+		balance: 3821,
+		skills: ["tempor", "mollit", "commodo", "veniam", "laborum"],
+		gender: "female",
+		age: 34,
+	},
+	{
+		name: "Ross Vazquez",
+		email: "rossvazquez@xinware.com",
+		eyeColor: "green",
+		friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+		isActive: false,
+		balance: 3793,
+		skills: ["nulla", "anim", "proident", "ipsum", "elit"],
+		gender: "male",
+		age: 24,
+	},
+	{
+		name: "Elma Head",
+		email: "elmahead@omatom.com",
+		eyeColor: "green",
+		friends: ["Goldie Gentry", "Aisha Tran"],
+		isActive: true,
+		balance: 2278,
+		skills: ["adipisicing", "irure", "velit"],
+		gender: "female",
+		age: 21,
+	},
+	{
+		name: "Carey Barr",
+		email: "careybarr@nurali.com",
+		eyeColor: "blue",
+		friends: ["Jordan Sampson", "Eddie Strong"],
+		isActive: true,
+		balance: 3951,
+		skills: ["ex", "culpa", "nostrud"],
+		gender: "male",
+		age: 27,
+	},
+	{
+		name: "Blackburn Dotson",
+		email: "blackburndotson@furnigeer.com",
+		eyeColor: "brown",
+		friends: ["Jacklyn Lucas", "Linda Chapman"],
+		isActive: false,
+		balance: 1498,
+		skills: ["non", "amet", "ipsum"],
+		gender: "male",
+		age: 38,
+	},
+	{
+		name: "Sheree Anthony",
+		email: "shereeanthony@kog.com",
+		eyeColor: "brown",
+		friends: ["Goldie Gentry", "Briana Decker"],
+		isActive: true,
+		balance: 2764,
+		skills: ["lorem", "veniam", "culpa"],
+		gender: "female",
+		age: 39,
+	},
+];
+const getUserNames = (users) => users.map((user) => user.name);
 // Change code above this line
-// console.log(getFriends(uniqueFriends));
-//["Sharron Pace", "Briana Decker", "Marilyn Mcintosh", 
-//"Padilla Garrison", "Naomi Buckner", "Goldie Gentry", "Aisha Tran",
-//"Jordan Sampson", "Eddie Strong", "Jacklyn Lucas", "Linda Chapman"]
+console.log(getUserNames(users)); //["Moore Hensley", "Sharlene Bush", "Ross Vazquez",
+// "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
+>>>>>>> Stashed changes
