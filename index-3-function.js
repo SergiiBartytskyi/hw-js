@@ -1628,3 +1628,15 @@
 // // Change code above this line
 // console.log(getUserNames(users)); //["Moore Hensley", "Sharlene Bush", "Ross Vazquez",
 // // "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
+// ===================================================================
+
+// const hours = 28;
+// // const b = 180;
+
+// if (hours < 17) console.log("Pending")
+// else if (hours >= 17 && hours < 22) console.log("Expires");
+// else if (hours >= 22 && hours < 24) console.log("Expires_2");
+// else if (hours >= 22 && hours < 24) console.log("Expires_2");
+// else console.log("Overdue")
+// ==========================================================
+
