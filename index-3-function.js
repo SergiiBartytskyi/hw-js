@@ -1639,4 +1639,115 @@
 // else if (hours >= 22 && hours < 24) console.log("Expires_2");
 // else console.log("Overdue")
 // ==========================================================
+// Buble sort
+// -------------------------------------
+// const a = [1, 2, 6, 9, 11, 20, 500, 401]
+// for (let i = 0; i < a.length - 2; i++) {
+//     // let changeElements = false;//
 
+// for (let j = 1; j < a.length - i; j++) {
+    
+//     const first = a[j - 1]
+//     const second = a[j]
+
+//     if (first > second) {
+//         a[j - 1] = second
+//         a[j] = first
+//     }
+    
+// }
+// }
+// console.log(a);
+// ===================================================================
+// const cart = {
+//     items: [],
+
+//     getItems() {
+//         return this.items
+//      },
+    
+//     add(product) { 
+//         for (const item of this.items) {
+//             if (item.name === product.name) {
+//                 item.quantity += 1
+//                 return
+//             }
+//         }
+
+//         const newProduct = {
+//             ...product,
+//             quantity: 1,
+//         }
+
+//         this.items.push(newProduct)
+//     },
+    
+    
+//     remove(productName) {
+//         const { items } = this;
+
+//        for (let i = 0; i < items.length; i += 1) {
+//            const { name } = items[i];
+        
+//            if (productName === name) {
+//                items.splice(i, 1)
+            
+//            }
+//        }
+//      },
+    
+//     clear() {
+//         this.items = []
+//      },
+    
+//     countTotalPrice() { 
+//         const { items } = this
+
+//         let total = 0
+
+//         for (const {price, quantity} of items) {
+//             total += price * quantity
+            
+//         }
+//         return total
+//     },
+    
+//     increaseQuantity(productName) {
+//         for (const item of this.items) {
+            
+//             if (item.name === productName) {
+//                 item.quantity += 1
+//                             }
+
+            
+//         }
+//     }
+
+// }
+
+
+// cart.add({ name: 'a', price: 50 })
+// cart.add({ name: 'b', price: 60 })
+// cart.add({ name: 'c', price: 70 })
+// cart.add({ name: 'c', price: 70 })
+// cart.add({ name: 'c', price: 70 })
+// cart.add({ name: 'd', price: 80 })
+// cart.add({ name: 'e', price: 90 })
+// cart.add({ name: 'e', price: 90 })
+// cart.add({ name: 'e', price: 90 })
+
+// console.table(cart.getItems());
+
+// cart.remove('a')
+// console.table(cart.getItems());
+
+// // cart.clear()
+// // console.log(cart.getItems());
+
+// console.log(cart.countTotalPrice());
+
+// cart.increaseQuantity('b')
+// cart.increaseQuantity('b')
+
+// console.table(cart.getItems());
+// =======================================================
