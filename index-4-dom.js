@@ -27,11 +27,11 @@
 // firstMenuItem.style.color = "tomato";
 // console.log(firstMenuItem);
 
-const firstTextEl = document.querySelector(".menu-item");
-console.log(firstTextEl);
+// const firstTextEl = document.querySelector(".menu-item");
+// console.log(firstTextEl);
 
-const newEl = document.createElement("div");
-newEl.innerHTML = `Живи <span class = "red"> як хочеш </span>!`;
-console.log(newEl.innerHTML);
+// const newEl = document.createElement("div");
+// newEl.innerHTML = `Живи <span class = "red"> як хочеш </span>!`;
+// console.log(newEl.innerHTML);
 
-firstTextEl.before(newEl);
+// firstTextEl.before(newEl);
