@@ -1,1 +1,1 @@
-# hw-js
+# goit-js-hw-06
