@@ -32,7 +32,7 @@ const makeImageCart = ({ url, alt }) => {
 	imgEl.src = url;
 	imgEl.alt = alt;
 
-	itemEl.append(imgEl);
+	itemEl.appendChild(imgEl);
 	return itemEl;
 };
 
