@@ -1,45 +1,50 @@
 const decrementEl = document.querySelector('button[data-action="decrement"]');
-console.log(decrementEl);
+// console.log(decrementEl);
 
 const incrementEl = document.querySelector('button[data-action="increment"]');
-console.log(incrementEl);
+// console.log(incrementEl);
 
 const spanEl = document.querySelector('#value');
-console.log(spanEl);
+// console.log(spanEl);
+
+// 1 варіант
+
+// let counterValue = 0;
+
+// decrementEl.addEventListener('click', () => {
+//     counterValue -= 1;
+//     spanEl.textContent = counterValue;
+// });
+
+// console.log(decrementEl);
+
+// incrementEl.addEventListener('click', () => {
+//     counterValue += 1;
+//     spanEl.textContent = counterValue;
+// });
+
+// console.log(incrementEl);
+
+//2 варіант
+
+const counter = {
+    value: 0,
+
+    decrement() {
+        this.value -= 1;
+    },
+
+    increment() {
+        this.value += 1;
+    },
+}
 
 decrementEl.addEventListener('click', () => {
-    this.value -= 1;
-    spanEl.textContent = this.value;
+    counter.decrement();
+    spanEl.textContent = counter.value;
 });
 
-console.dir(decrementEl);
-
-
-// incrementEl.removeEventListener('click', onTargetButtonClick)
-
-
-// const counter = {
-// 	value: 0,
-
-// 	increment() {
-// 		this.value += 1;
-// 	},
-
-// 	decrement() {
-// 		this.value -= 1;
-// 	},
-// };
-
-// const counterValue = document.querySelector("#value");
-// const decrementBtn = document.querySelector('button[data-action="decrement"]');
-// const incrementBtn = document.querySelector('button[data-action="increment"]');
-
-// decrementBtn.addEventListener("click", function () {
-// 	counter.decrement();
-// 	counterValue.textContent = counter.value;
-// });
-
-// incrementBtn.addEventListener("click", function () {
-// 	counter.increment();
-// 	counterValue.textContent = counter.value;
-// });
+incrementEl.addEventListener('click', () => {
+    counter.increment();
+    spanEl.textContent = counter.value;
+});
